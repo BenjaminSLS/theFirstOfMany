@@ -1,25 +1,16 @@
-# Get input
-numberOne = input("Number 1: ")
-numberTwo = input("Number 2: ")
+n1 = float(input("#1: "))
+n2 = float(input("#2: "))
 
-# Swap input to an integer
-n1 = int(numberOne)
-n2 = int(numberTwo)
 
-# Choose symbol
-print("Choose your symbol: (1) (2) (3)")
-symbolInput = input()
-symbol = int(symbolInput)
+symbol = str(input("select symbol: "))
 
-# Final math
-if symbol == 1:
-    finalNumber = n1 + n2
-    print("Answer: " + str(finalNumber))
-elif symbol == 2:
-    finalNumber = n1 - n2
-    print("Answer: " + str(finalNumber))
-elif symbol == 3:
-    finalNumber = n1 * n2
-    print("Answer: " + str(finalNumber))
+if symbol == "/":
+    print(n1 / n2)
+elif symbol == "+":
+    print(n1 + n2)
+elif symbol == "-":
+    print(n1 - n2)
+elif symbol == "*":
+    print(n1 * n2)
 else:
-    print("Failure!")
+    print("Failure")
